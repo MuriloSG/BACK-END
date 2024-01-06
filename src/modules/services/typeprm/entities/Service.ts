@@ -31,3 +31,5 @@ class Service {
     Create atribute image.
   */
 }
+
+export default Service;
