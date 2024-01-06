@@ -1,7 +1,5 @@
-#  SaaS para Academias
+# AGENDAMENTOS BARBEARIA
 
-## Modelo Conceitual:
-![Modelo Conceitual](/public/db_saasAcademia.png)
 
 ## Dependências de desenvolvimento:
 1. **@types/cors:** v2.8.17
