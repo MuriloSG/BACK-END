@@ -3,7 +3,7 @@ import Service from "../typeprm/entities/Service";
 import { serviceRepository } from "../typeprm/repositories/ServicesRepository";
 import AppError from "@shared/errors/AppError";
 
-class CreateServicesService {
+class ListServicesService {
   public async execute(): Promise<Service[]> {
     const servicesReposity = getCustomRepository(serviceRepository);
     const service = await servicesReposity.find();
@@ -16,4 +16,4 @@ class CreateServicesService {
   }
 }
 
-export default CreateServicesService;
+export default ListServicesService;
