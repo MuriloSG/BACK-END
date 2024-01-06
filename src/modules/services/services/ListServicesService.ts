@@ -9,9 +9,9 @@ class CreateServicesService {
     const service = await servicesReposity.find();
 
     if (service.length === 0) {
-      throw new AppError('There are no services')
+      throw new AppError('There are no services', 404)
     }
-    
+
     return service;
   }
 }
