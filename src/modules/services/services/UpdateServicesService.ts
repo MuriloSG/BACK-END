@@ -11,7 +11,7 @@ interface IRequest {
   duration: number;
 }
 
-class ShowServicesService {
+class UpdateServicesService {
   public async execute({ id, name, description, price, duration }: IRequest): Promise<Service> {
     const servicesReposity = getCustomRepository(serviceRepository);
     const service = await servicesReposity.findOne(id);
@@ -36,4 +36,4 @@ class ShowServicesService {
   }
 }
 
-export default ShowServicesService;
+export default UpdateServicesService;
