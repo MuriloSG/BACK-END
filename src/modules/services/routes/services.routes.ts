@@ -11,4 +11,4 @@ servicesRoutes.post("/", servicesController.create);
 servicesRoutes.put("/:id", servicesController.update);
 servicesRoutes.delete("/:id", servicesController.delete);
 
-export default servicesController;
+export default servicesRoutes;

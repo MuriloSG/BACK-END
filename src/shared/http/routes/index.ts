@@ -1,9 +1,7 @@
-import { Router } from 'express'
+import servicesRoutes from "@modules/services/routes/services.routes";
+import { Router } from "express"
 
 const routes = Router();
-
-routes.get('/', (request, response) => {
-  return response.json({ message: 'Project Pedido certo' });
-})
+routes.use("services", servicesRoutes);
 
 export default routes;
