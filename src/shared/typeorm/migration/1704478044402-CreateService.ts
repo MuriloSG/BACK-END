@@ -11,7 +11,7 @@ export class CreateService1704478044402 implements MigrationInterface {
       name: 'service',
       columns: [
         {
-          name: 'uuid',
+          name: 'id',
           type: 'uuid',
           isPrimary: true,
           generationStrategy: 'uuid',
