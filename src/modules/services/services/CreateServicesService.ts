@@ -8,10 +8,11 @@ interface IRequest{
   description: string;
   price: number;
   duration: number;
+  status: string;
 }
 
 class CreateServicesService {
-  public async execute({name, description, price, duration}: IRequest): Promise<Service>{
+  public async execute({name, description, price, duration, status}: IRequest): Promise<Service>{
     const servicesReposity = getCustomRepository(serviceRepository);
     const serviceExists = await servicesReposity.findByName(name);
 
@@ -23,7 +24,8 @@ class CreateServicesService {
       name,
       description,
       price,
-      duration
+      duration,
+      status
     });
 
     await servicesReposity.save(service);

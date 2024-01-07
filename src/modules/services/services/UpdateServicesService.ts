@@ -9,10 +9,11 @@ interface IRequest {
   description: string;
   price: number;
   duration: number;
+  status: string;
 }
 
 class UpdateServicesService {
-  public async execute({ id, name, description, price, duration }: IRequest): Promise<Service> {
+  public async execute({ id, name, description, price, duration, status }: IRequest): Promise<Service> {
     const servicesReposity = getCustomRepository(serviceRepository);
     const service = await servicesReposity.findOne(id);
 
@@ -29,6 +30,7 @@ class UpdateServicesService {
     service.price = price;
     service.duration = duration;
     service.description = description;
+    service.status = status;
 
     await servicesReposity.save(service);
 
