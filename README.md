@@ -30,3 +30,23 @@
 | price       | number     |
 | duration    | number     |
 | status      | string     |
+
+## Rotas validadas com o Celebrate/Joi
+- **GET /services:**
+  - Lista todos os serviços.
+
+- **GET /services/:id:**
+  - Obtém detalhes de um serviço específico.
+  - Validação de parâmetros de caminho usando Joi.
+
+- **POST /services:**
+  - Cria um novo serviço.
+  - Validação de dados no corpo da solicitação usando Joi.
+
+- **PUT /services/:id:**
+  - Atualiza informações de um serviço existente.
+  - Validação de parâmetros de caminho e dados no corpo da solicitação usando Joi.
+
+- **DELETE /services/:id:**
+  - Exclui um serviço existente.
+  - Validação de parâmetros de caminho usando Joi.
