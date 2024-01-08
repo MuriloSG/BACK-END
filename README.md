@@ -20,3 +20,13 @@
 4. **pg:** v8.11.3
 5. **reflect-metadata:** v0.1.13
 6. **typeorm:** v0.3.17
+
+## Tabela Serviços
+| Atributo    | Tipo       |
+|-------------|------------|
+| id (uuid)   | string     |
+| name        | string     |
+| description | string     |
+| price       | number     |
+| duration    | number     |
+| status      | string     |
